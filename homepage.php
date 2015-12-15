@@ -61,8 +61,9 @@ if (isset($_POST['submit'])) { //check if the form has been submitted
 ?>
 
 <html>
+<head>
 <link href="style.css" rel="stylesheet" type="text/css" />
-
+</head>
 <div id = "questions">
 <center>
 <img src="images/shazamlogo.png" width="500" height="360" alt="Shazam logo"/>
