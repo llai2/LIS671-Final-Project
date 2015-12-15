@@ -45,7 +45,7 @@ if ($conn->connect_error) die($conn->connect_error);
 
 $query = "SELECT books.books_title,books.books_author,books.books_link FROM books JOIN recs ON
 books.books_id=recs.recs_id WHERE recs.id_number LIKE 
-(SELECT books_id FROM books WHERE books_title LIKE '%".$favoritegraphicnovel3."%')";
+(SELECT books_id FROM books WHERE books_title LIKE \"%".$_SESSION["favoritegraphicnovel2"]."%\")";
 
 $result = $conn->query($query);
 if (!$result) die ("Database access failed: " . $conn->error);
